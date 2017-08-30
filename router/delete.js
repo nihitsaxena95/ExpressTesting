@@ -2,10 +2,9 @@ let express = require('express');
 let Router = express.Router();
 let query = require('./../model/schema');
 
-Router.get('/',(req,res) => {
-	query.find({},(err,data) => {
+Router.delete('/',(req,res) => {
+	query.remove({"username" : req.body.username},(err,data) => {
 		res.json({user : data});
-	
 	})
 })
 

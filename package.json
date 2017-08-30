@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node ./entry/dev"
+    "start": "node ./entry/dev",
+    "test": "nyc mocha"
   },
   "author": "",
   "license": "ISC",
@@ -22,7 +23,9 @@
     "babel-register": "^6.26.0",
     "chai": "^4.1.1",
     "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
     "rimraf": "^2.6.1",
+    "sinon": "^3.2.1",
     "supertest": "^3.0.0"
   }
 }
